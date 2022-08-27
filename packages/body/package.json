@@ -26,6 +26,8 @@
     "autoprefixer": "^10.1.0",
     "postcss": "^8.2.1",
     "vue": "^3.0.0",
-    "single-spa-vue": "^2.1.0"
+    "single-spa-vue": "^2.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }

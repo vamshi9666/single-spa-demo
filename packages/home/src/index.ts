@@ -1,24 +1,17 @@
-import { registerApplication, start } from 'single-spa'
+import { registerApplication, start } from "single-spa";
 
 registerApplication(
-  'header',
+  "filter",
   // @ts-ignore
-  () => import('home-nav/Header'),
-  (location) => location.pathname.startsWith('/'),
-)
+  () => import("home-nav/Filter"),
+  (location) => location.pathname.startsWith("/")
+);
 
 registerApplication(
-  'footer',
+  "apiItems",
   // @ts-ignore
-  () => import('home-nav/Footer'),
-  (location) => location.pathname.startsWith('/'),
-)
+  () => import("home-body/ApiContent"),
+  (location) => location.pathname.startsWith("/")
+);
 
-registerApplication(
-  'body',
-  // @ts-ignore
-  () => import('home-body/Body'),
-  (location) => location.pathname.startsWith('/'),
-)
-
-start()
+start();
